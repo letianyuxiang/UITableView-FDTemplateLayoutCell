@@ -249,7 +249,7 @@
 
 - (CGFloat)fd_heightForHeaderFooterViewWithIdentifier:(NSString *)identifier configuration:(void (^)(id))configuration {
     UITableViewHeaderFooterView *templateHeaderFooterView = [self fd_templateHeaderFooterViewForReuseIdentifier:identifier];
-    >>>>mark--- 这里加一行代码，把视图返回出去，就可以正常计算了
+    //mark--- 这里加一行代码，把视图返回出去，就可以正常计算了
     if (configuration) {
         configuration(templateHeaderFooterView);
     }
